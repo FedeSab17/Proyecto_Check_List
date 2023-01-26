@@ -1,0 +1,40 @@
+.body{
+
+    text-align: center;
+    margin: auto;
+    
+
+}
+
+.imgLogo{
+
+    width: 500px;
+    height: 300px;
+
+}
+
+.botonGrande{
+
+    width: 150px;
+    height: 50px;
+    
+
+}
+
+
+.botonConclusion{
+
+    width: 250px;
+    height: 50px;
+    
+
+}
+
+.fondo{
+
+    background-image: url("https://www.ecocuyo.com/wp-content/uploads/2019/05/TAIPEI-1.png");
+
+}
+
+
+
