@@ -139,7 +139,7 @@ const FormAberturasUpdate = (props) => {
 
             console.log("ID_VISITA => ", id)
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/AberturaServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/AberturaServlet`,{
 
                 method:"GET",
                 params:{
@@ -192,7 +192,7 @@ const FormAberturasUpdate = (props) => {
             let idAber = localStorage.getItem("idAberturaUpdate")
 
 
-            const response = await axios(`http://localhost:8080/Proyecto_CheckList/AberturaServlet`, {
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/AberturaServlet`, {
 
                 method:"GET",
                 params:{

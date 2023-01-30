@@ -128,7 +128,7 @@ const FormRedElectricidadUpdate = (props) => {
             //Obtengo el n° de obra del localStorage =>
             let id = localStorage.getItem("idVisitaUpdate")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/RedElectricidadServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/RedElectricidadServlet`,{
 
                 method:"GET",
                 params:{
@@ -177,7 +177,7 @@ const FormRedElectricidadUpdate = (props) => {
             let idVis = localStorage.getItem("idVisitaUpdate")
             let idElect = localStorage.getItem("idElectricidadUpdate")
 
-            const response = await axios(`http://localhost:8080/Proyecto_CheckList/RedElectricidadServlet`, {
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/RedElectricidadServlet`, {
 
                 method:"GET",
                 params:{

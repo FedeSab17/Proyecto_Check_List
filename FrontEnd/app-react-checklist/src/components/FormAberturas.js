@@ -113,7 +113,7 @@ const FormAberturas = (props) => {
 
             let id = localStorage.getItem("idVisita")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/AberturaServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/AberturaServlet`,{
 
                 method:"GET",
                 params:{

@@ -117,7 +117,7 @@ const FormPaneles = (props) => {
 
             let id = localStorage.getItem("idVisita")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/PanelServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/PanelServlet`,{
 
                 method:"GET",
                 params:{
@@ -175,7 +175,7 @@ const FormPaneles = (props) => {
 
             console.log("ID_VISITA => ", id)
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/PanelServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/PanelServlet`,{
 
                 method:"GET",
                 params:{

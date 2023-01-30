@@ -142,7 +142,7 @@ const FormGremioUpdate = (props) => {
             //Obtengo el n° de obra del localStorage =>
             let id = query.get("idGremio")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/GremioServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/GremioServlet`,{
 
                 method:"GET",
                 params:{
@@ -199,7 +199,7 @@ const FormGremioUpdate = (props) => {
             let idGrem = localStorage.getItem("idGremioUpdate")
 
 
-            const response = await axios(`http://localhost:8080/Proyecto_CheckList/GremioServlet`, {
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/GremioServlet`, {
 
                 method:"GET",
                 params:{

@@ -136,7 +136,7 @@ const FormPanelesUpdate = (props) => {
             //Obtengo el n° de obra del localStorage =>
             let id = localStorage.getItem("idVisitaUpdate")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/PanelServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/PanelServlet`,{
 
                 method:"GET",
                 params:{
@@ -189,7 +189,7 @@ const FormPanelesUpdate = (props) => {
             let idVis = localStorage.getItem("idVisitaUpdate")
             let idPan = localStorage.getItem("idPanelUpdate")
 
-            const response = await axios(`http://localhost:8080/Proyecto_CheckList/PanelServlet`, {
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/PanelServlet`, {
 
                 method:"GET",
                 params:{

@@ -126,7 +126,7 @@ const FormHumeda = (props) => {
 
             let id = localStorage.getItem("idVisita")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/HumedaServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/HumedaServlet`,{
 
                 method:"GET",
                 params:{
@@ -190,7 +190,7 @@ const FormHumeda = (props) => {
 
             console.log("ID_VISITA => ", id)
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/HumedaServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/HumedaServlet`,{
 
                 method:"GET",
                 params:{

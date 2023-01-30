@@ -121,7 +121,7 @@ const FormGeneral = (props) => {
 
         try{
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/GeneralServlet", {
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/GeneralServlet`, {
 
                 method:"GET",
                 params:{
@@ -173,7 +173,7 @@ const FormGeneral = (props) => {
 
         try{
 
-            const response = await fetch("http://localhost:8080/Proyecto_CheckList/GeneralServlet?action=listar", {
+            const response = await fetch(`${process.env.REACT_APP_KEY}Proyecto_CheckList/GeneralServlet?action=listar`, {
 
                 method:"GET",
 

@@ -78,7 +78,7 @@ const FormGeneralVista = (props) => {
 
             let codigo = localStorage.getItem("codigoVista")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/GeneralServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/GeneralServlet`,{
 
                 method:"GET",
                 params:{

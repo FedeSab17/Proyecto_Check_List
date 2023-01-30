@@ -8,8 +8,8 @@ import java.sql.DriverManager;
 public class Conexion {
     
     public String URL = "jdbc:mysql://localhost:3306/proyecto_check_list?autoReconnect=true&useSSL=false";
-    public String usuario = "root";
-    public String contraseña = "12345";
+    public String usuario = "check_list";
+    public String contraseña = "GLTNtm2022";
 
     public Connection getConnection() {  //Metodo para gestionar la conexion.
 

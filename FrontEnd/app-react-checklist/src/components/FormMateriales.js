@@ -115,7 +115,7 @@ const FormMateriales = (props) => {
 
             let id = localStorage.getItem("idVisita")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/MaterialServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/MaterialServlet`,{
 
                 method:"GET",
                 params:{
@@ -169,7 +169,7 @@ const FormMateriales = (props) => {
 
             console.log("ID_VISITA => ", id)
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/MaterialServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/MaterialServlet`,{
 
                 method:"GET",
                 params:{

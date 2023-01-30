@@ -80,7 +80,7 @@ const FormHumedaVista = (props) => {
 
             let id = localStorage.getItem("idVisitaVista")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/PanelServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/PanelServlet`,{
 
                 method:"GET",
                 params:{

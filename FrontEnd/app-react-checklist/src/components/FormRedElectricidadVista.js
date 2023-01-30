@@ -74,7 +74,7 @@ const FormRedElectricidadVista = (props) => {
 
             let id = localStorage.getItem("idVisitaVista")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/RedElectricidadServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/RedElectricidadServlet`,{
 
                 method:"GET",
                 params:{

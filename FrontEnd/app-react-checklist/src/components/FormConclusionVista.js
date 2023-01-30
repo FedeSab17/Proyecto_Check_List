@@ -76,7 +76,7 @@ const FormConclusionVista = (props) => {
 
             let id = localStorage.getItem("idGeneralVista")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/ConclusionServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/ConclusionServlet`,{
 
                 method:"GET",
                 params:{

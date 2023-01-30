@@ -124,7 +124,7 @@ const FormVisita = (props) => {
 
         try{
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/GeneralServlet", {
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/GeneralServlet`, {
 
                 method:"GET",
                 params:{
@@ -164,7 +164,7 @@ const FormVisita = (props) => {
 
         try{
 
-            const response = await fetch("http://localhost:8080/Proyecto_CheckList/GeneralServlet?action=ultimoId", {
+            const response = await fetch(`${process.env.REACT_APP_KEY}Proyecto_CheckList/GeneralServlet?action=ultimoId`, {
 
                 method:"GET",
                 
@@ -206,7 +206,7 @@ const FormVisita = (props) => {
 
                 console.log("ULTIMO ID DESDE VISTA => ", ultimoId)
 
-                const response = await axios("http://localhost:8080/Proyecto_CheckList/VisitaServlet", {
+                const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/VisitaServlet`, {
 
                     method:"GET",
                     params:{
@@ -253,7 +253,7 @@ const FormVisita = (props) => {
 
                 console.log("ID_GENERAL X N° OBRA => ", id)
 
-                const response = await axios("http://localhost:8080/Proyecto_CheckList/VisitaServlet", {
+                const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/VisitaServlet`, {
 
                     method:"GET",
                     params:{

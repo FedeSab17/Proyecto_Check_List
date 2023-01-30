@@ -109,7 +109,7 @@ const FormRedGas = (props) => {
 
             let id = localStorage.getItem("idVisita")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/RedGasServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/RedGasServlet`,{
 
                 method:"GET",
                 params:{
@@ -163,7 +163,7 @@ const FormRedGas = (props) => {
 
             console.log("ID_VISITA => ", id)
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/RedGasServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/RedGasServlet`,{
 
                 method:"GET",
                 params:{

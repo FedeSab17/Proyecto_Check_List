@@ -50,7 +50,7 @@ const VisitasUpdate = (props) => {
 
             let codigoObra = localStorage.getItem("nObraUpdate")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/AuxVisitaGeneralServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/AuxVisitaGeneralServlet`,{
 
                 method:"GET",
                 params:{

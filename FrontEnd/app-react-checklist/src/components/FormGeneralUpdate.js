@@ -136,7 +136,7 @@ const FormGeneralUpdate = (props) => {
             //Obtengo el n° de obra del localStorage =>
             let codigo = localStorage.getItem("nObraUpdate")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/GeneralServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/GeneralServlet`,{
 
                 method:"GET",
                 params:{
@@ -187,7 +187,7 @@ const FormGeneralUpdate = (props) => {
             //Obtenermos el idGeneral del localStorage =>
             let id = localStorage.getItem("idGeneralUpdate")
 
-            const response = await axios(`http://localhost:8080/Proyecto_CheckList/GeneralServlet`, {
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/GeneralServlet`, {
 
                 method:"GET",
                 params:{
@@ -248,7 +248,7 @@ const FormGeneralUpdate = (props) => {
             //Obtenermos el idGeneral del localStorage =>
             let id = localStorage.getItem("idGeneralUpdate")
 
-            const response = await fetch(`http://localhost:8080/Proyecto_CheckList/GeneralServlet?action=listar`, {
+            const response = await fetch(`${process.env.REACT_APP_KEY}Proyecto_CheckList/GeneralServlet?action=listar`, {
 
                 method:"GET",
                 params:{

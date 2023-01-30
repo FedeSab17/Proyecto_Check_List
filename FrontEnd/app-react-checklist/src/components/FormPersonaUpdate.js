@@ -150,7 +150,7 @@ const FormPersonaUpdate = (props) => {
             //Obtengo el n° de obra del localStorage =>
             let id = localStorage.getItem("idVisitaUpdate")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/PersonaServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/PersonaServlet`,{
 
                 method:"GET",
                 params:{
@@ -211,7 +211,7 @@ const FormPersonaUpdate = (props) => {
             let idPer = localStorage.getItem("idPersonaUpdate")
 
 
-            const response = await axios(`http://localhost:8080/Proyecto_CheckList/PersonaServlet`, {
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/PersonaServlet`, {
 
                 method:"GET",
                 params:{

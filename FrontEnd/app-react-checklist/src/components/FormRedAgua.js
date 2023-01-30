@@ -109,7 +109,7 @@ const FormRedAgua = (props) => {
 
             let id = localStorage.getItem("idVisita")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/RedAguaServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/RedAguaServlet`,{
 
                 method:"GET",
                 params:{
@@ -163,7 +163,7 @@ const FormRedAgua = (props) => {
 
             console.log("ID_VISITA => ", id)
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/RedAguaServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/RedAguaServlet`,{
 
                 method:"GET",
                 params:{

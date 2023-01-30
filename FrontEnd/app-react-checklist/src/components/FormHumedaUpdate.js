@@ -148,7 +148,7 @@ const FormHumedaUpdate = (props) => {
             //Obtengo el n° de obra del localStorage =>
             let id = localStorage.getItem("idVisitaUpdate")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/HumedaServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/HumedaServlet`,{
 
                 method:"GET",
                 params:{
@@ -207,7 +207,7 @@ const FormHumedaUpdate = (props) => {
             let idVis = localStorage.getItem("idVisitaUpdate")
             let idHum = localStorage.getItem("idHumedaUpdate")
 
-            const response = await axios(`http://localhost:8080/Proyecto_CheckList/HumedaServlet`, {
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/HumedaServlet`, {
 
                 method:"GET",
                 params:{

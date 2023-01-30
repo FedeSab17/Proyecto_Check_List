@@ -87,7 +87,7 @@ const BusquedaObraAdmin = (props) => {
 
         try{
 
-            const response = await fetch("http://localhost:8080/Proyecto_CheckList/GeneralServlet?action=listar", {
+            const response = await fetch(`${process.env.REACT_APP_KEY}Proyecto_CheckList/GeneralServlet?action=listar`, {
 
                 method:"GET",
 

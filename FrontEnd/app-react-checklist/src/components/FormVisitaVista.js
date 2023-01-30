@@ -78,7 +78,7 @@ const FormVisitaVista = (props) => {
             console.log("IDVISITA => ", id)
 
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/VisitaServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/VisitaServlet`,{
 
                 method:"GET",
                 params:{

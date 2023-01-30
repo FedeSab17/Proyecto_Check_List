@@ -83,7 +83,7 @@ const FormPersonasVista = (props) => {
 
             let id = localStorage.getItem("idVisitaVista")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/PersonaServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/PersonaServlet`,{
 
                 method:"GET",
                 params:{

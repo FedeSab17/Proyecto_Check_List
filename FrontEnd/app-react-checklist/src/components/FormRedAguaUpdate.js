@@ -128,7 +128,7 @@ const FormRedAguaUpdate = (props) => {
             //Obtengo el n° de obra del localStorage =>
             let id = localStorage.getItem("idVisitaUpdate")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/RedAguaServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/RedAguaServlet`,{
 
                 method:"GET",
                 params:{
@@ -177,7 +177,7 @@ const FormRedAguaUpdate = (props) => {
             let idVis = localStorage.getItem("idVisitaUpdate")
             let idAgu = localStorage.getItem("idAguaUpdate")
 
-            const response = await axios(`http://localhost:8080/Proyecto_CheckList/RedAguaServlet`, {
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/RedAguaServlet`, {
 
                 method:"GET",
                 params:{

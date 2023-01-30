@@ -54,7 +54,7 @@ const PrincipalCargaForm = (props) => {
 
         try{
 
-            const response = await fetch(`http://localhost:8080/Proyecto_CheckList/VisitaServlet?action=ultimoId&codigo=${codigo}`, {
+            const response = await fetch(`${process.env.REACT_APP_KEY}Proyecto_CheckList/VisitaServlet?action=ultimoId&codigo=${codigo}`, {
 
                 method:"GET",
                 
@@ -86,7 +86,7 @@ const PrincipalCargaForm = (props) => {
 
         try{
 
-            const response = await fetch(`http://localhost:8080/Proyecto_CheckList/PersonaServlet?action=ultimoId&codigo=${codigo}`, {
+            const response = await fetch(`${process.env.REACT_APP_KEY}Proyecto_CheckList/PersonaServlet?action=ultimoId&codigo=${codigo}`, {
 
                 method:"GET",
                 

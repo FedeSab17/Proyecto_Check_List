@@ -150,7 +150,7 @@ const FormSecoUpdate = (props) => {
             //Obtengo el n° de obra del localStorage =>
             let id = localStorage.getItem("idVisitaUpdate")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/SecoServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/SecoServlet`,{
 
                 method:"GET",
                 params:{
@@ -210,7 +210,7 @@ const FormSecoUpdate = (props) => {
             let idVis = localStorage.getItem("idVisitaUpdate")
             let idSec = localStorage.getItem("idSecoUpdate")
 
-            const response = await axios(`http://localhost:8080/Proyecto_CheckList/SecoServlet`, {
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/SecoServlet`, {
 
                 method:"GET",
                 params:{

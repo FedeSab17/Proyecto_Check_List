@@ -130,7 +130,7 @@ const FormConclusionUpdate = (props) => {
             //Obtengo el n° de obra del localStorage =>
             let id = localStorage.getItem("idGeneralUpdate")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/ConclusionServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/ConclusionServlet`,{
 
                 method:"GET",
                 params:{
@@ -180,7 +180,7 @@ const FormConclusionUpdate = (props) => {
             let idVis = localStorage.getItem("idVisitaUpdate")
             let idCon = localStorage.getItem("idConclusionUpdate")
 
-            const response = await axios(`http://localhost:8080/Proyecto_CheckList/ConclusionServlet`, {
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/ConclusionServlet`, {
 
                 method:"GET",
                 params:{

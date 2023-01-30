@@ -77,7 +77,7 @@ const FormMaterialesVista = (props) => {
             //Guardamos el dato alojado en el localstorage en una variable =>
             let id = localStorage.getItem("idVisitaVista")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/MaterialServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/MaterialServlet`,{
 
                 method:"GET",
                 params:{

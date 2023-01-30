@@ -94,7 +94,7 @@ const PedidoObra = (props) => {
 
         try{
 
-            const response = await fetch("http://localhost:8080/Proyecto_CheckList/GeneralServlet?action=listar", {
+            const response = await fetch(`${process.env.REACT_APP_KEY}Proyecto_CheckList/GeneralServlet?action=listar`, {
 
                 method:"GET",
 
@@ -133,7 +133,7 @@ const PedidoObra = (props) => {
 
         try{
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/VisitaServlet", {
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/VisitaServlet`, {
 
                 method:"GET",
                 params:{

@@ -85,7 +85,7 @@ const FormSecoVista = (props) => {
 
             let id = localStorage.getItem("idVisitaVista")
 
-            const response = await axios("http://localhost:8080/Proyecto_CheckList/SecoServlet",{
+            const response = await axios(`${process.env.REACT_APP_KEY}Proyecto_CheckList/SecoServlet`,{
 
                 method:"GET",
                 params:{
